@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+                
+</head>
+<body>
+        <button onclick="traerPE()">Cargar Persona ESPACIO</button>
+    <div id="starW">Personaje Star Wars
+    <h1>Personaje</p> <p id="personaje"></p>
+        <h1>Cumpleaños</p> <p id="cumple"></p>
+            <button onclick="traerDatos()">Cargar Datos</button>
+            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">Bsucar</i></a>
+        </div>
+    
+    <div id="starW">Perfil GitHub
+            <h1>Que perfil quieres buscar?</h1>
+            <input id="usuarioG" type="text">
+            
+        <button onclick="traerPerfil()">Cargar Perfil</button>
+        <h1>Usuario</p> <p id="usuario"></p>
+        <h1>Biografia</p> <p id="bio"></p>
+       
+        </div>
+
+    <script>
+       
+
+    function getP(url="https://swapi.co/api/people/2",callback){
+        var xhttp= new XMLHttpRequest();
+        xhttp.onreadystatechange = function(){
+            if(this.readyState==4 && this.status==200){
+                 callback(JSON.parse(this.responseText))
+                  }
+
+        };
+        xhttp.open("GET",url);
+        xhttp.send();
+    }
+
+
+    function renderPersonaje(personaje){
+        document.getElementById("personaje").innerHTML=personaje.name;
+        document.getElementById("cumple").innerHTML=personaje.birth_year;
+        
+    }
+
+    function renderPokemon(data){
+        console.log(data);
+    }
+
+    function renderPerfilGitH(perfil){
+        console.log(perfil);
+        document.getElementById("usuario").innerHTML=perfil.name;
+        document.getElementById("bio").innerHTML=perfil.bio;
+        
+    }
+
+    function traerDatos(){
+        getP("https://swapi.co/api/people/2",renderPersonaje);
+    }
+
+    function traerPerfil(){
+        var usuario;
+        usuario=document.getElementById("usuarioG").value;
+        console.log(usuario);
+        getP(`https://pokeapi.co/api/v2/pokemon-form/4/`,renderPerfilGitH);
+    }
+
+    function PE(pe){
+        console.log(pe.number);
+    }
+
+    function traerPE(){
+        getP("http://api.open-notify.org/astros.json",PE)
+        }
+
+    </script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

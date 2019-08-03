@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Reto 2 BOOTCAMP REACT 2019</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://weareoutman.github.io/clockpicker/dist/bootstrap-clockpicker.min.css" rel="stylesheet" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://weareoutman.github.io/clockpicker/dist/bootstrap-clockpicker.min.js"></script>
+  
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">RETO 2</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Inicio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#punto1">Retos</a>
+  
+        <li><a  href="#punto1"  style="color: white" id=""><span class="nav-item-name">Punto 1</span></a></li>
+        <li><a href="#punto2" style="color: white"id=""><span class="nav-item-name">Punto 2</span></a></li>
+        <li><a href="#punto3"  style="color: white" id=""><span class="nav-item-name">Punto 3</span></a></li>
+        <li><a href="#punto4" style="color: white"id=""><span class="nav-item-name">Punto 4</span></a></li>
+        <li><a href="#punto5"  style="color: white" id=""><span class="nav-item-name">Punto 5</span></a></li>
+        <li><a href="#punto6" style="color: white"id=""><span class="nav-item-name">Punto 6</span></a></li>
+        <li><a href="#punto7"  style="color: white" id=""><span class="nav-item-name">Punto 7</span></a></li>
+        <li><a href="#punto8" style="color: white"id=""><span class="nav-item-name">Punto 8</span></a></li>
+        <li><a href="#punto9"  style="color: white" id=""><span class="nav-item-name">Punto 9</span></a></li>
+        <li><a href="#punto10" style="color: white"id=""><span class="nav-item-name">Punto 10</span></a></li>
+        <li><a href="#punto11"  style="color: white" id=""><span class="nav-item-name">Punto 11</span></a></li>
+        <li><a href="#punto12" style="color: white"id=""><span class="nav-item-name">Punto 12</span></a></li>
+        <li><a href="#punto13"  style="color: white" id=""><span class="nav-item-name">Punto 13</span></a></li>
+        <li><a href="#punto14" style="color: white"id=""><span class="nav-item-name">Punto 14</span></a></li>
+        <li><a href="#punto15"  style="color: white" id=""><span class="nav-item-name">Punto 15</span></a></li>
+        <li><a href="#punto16" style="color: white"id=""><span class="nav-item-name">Punto 16</span></a></li>
+        <li><a href="#punto17" style="color: white"id=""><span class="nav-item-name">Punto 17</span></a></li>
+        <li><a href="#punto18" style="color: white"id=""><span class="nav-item-name">Punto 18</span></a></li>
+  
+      </li>
+
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex" id="inicio">
+    <div class="container text-center my-auto" >
+      <h1 class="mb-1">Reto 2</h1>
+      <h1 class="mb-1">BOOTCAMP REACT 2019</h1>
+      <h3 class="mb-5">
+        <em>Aqui encontraras diferentes problemas resultos mediante programación web.</em>
+        <br><em>©Eureka! Technology</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#punto1">Ir a RETOS</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- About -->
+  <section class="content-section bg-light" id="punto1">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2 class="text-secondary mb-5">Problema 1</h2>
+          <h2 class="text-secondary mb-5">Programa para calcular Nota Estudiante</h2>
+     
+          <img src="./img/p1.jpg">
+          <br>
+          <p>Escriba la nota #1</p>
+          <input id="n1" type="text">
+          <p>Escriba la nota #2</p>
+          <input id="n2" type="text">
+          <p>Escriba la nota #3</p>
+          <input id="n3" type="text">
+          <p>Escriba la nota #4</p>
+          <input id="n4" type="text">
+          <p></p>
+          <button onclick="sumar()" >Calcular Media</button>
+          <h2>
+          Su nota es: <p id="resultado"></p>
+          </h2>
+   
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto2">Ver problema 2</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!--problema2 -->
+   <section class="content-section bg-primary text-white text-center" id="punto2">
+    <div class="container">
+      <div class="content-section-heading">
+        <h2 class="text-secondary mb-5">Problema 2</h2>
+        <h2 class="text-secondary mb-5">Programa para calcular fuerza de atracción</h2>
+     
+        <img src="./img/p2.jpg">
+        <br>
+        <p>Escriba la Masa1(gr)</p>
+          <input style="color:black" id="m1" type="text">
+          <p>Escriba la Masa2(gr)</p>
+          <input style="color:black" id="m2" type="text">
+          <p>Escriba la Distancia(m):</p>
+          <input style="color:black" id="distancia" type="text">
+          <p></p>
+          <button style="color:black" onclick="FuerzaA()" >Calcular La Fuerza de atracción</button>
+          <h2>
+          La fuerza de atracción es: <p id="resultado2"></p>
+          </h2>
+         </div>
+         <br>
+         <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto3">Ver problema 3</a>
+    
+    </div>
+  </section>
+
+  
+  <section class="content-section bg-light" id="punto3">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2 class="text-secondary mb-5">Problema 3</h2>
+          <h2 class="text-secondary mb-5">Programa para calcular Energía</h2>
+     
+          <img src="./img/p3.jpg">
+          <br>
+          <p>Ingrese la masa(gr)</p>
+          <input id="masaE" type="text">
+          <p></p>
+          <button onclick="einstein()" >Calcular Energía</button>
+          <h2>
+          La Energia es: <p id="resultado3"></p>
+          </h2>
+    
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto4">Ver problema 4</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!--problema4 -->
+   <section class="content-section bg-primary text-white text-center" id="punto4">
+    <div class="container">
+      <div class="content-section-heading">
+        <h2 class="text-secondary mb-5">Problema 4</h2>
+        <h2 class="text-secondary mb-5">Programa para calcular Hipotenusa</h2>
+     
+        <img src="./img/p4.jpg">
+        <br>
+        <br>
+        <p>Escriba la longitud del lado a(cm):</p>
+          <input style="color:black" id="la" type="text">
+          <br><br>
+        <p>Escriba la longitud del lado b(cm):</p>
+          <input style="color:black" id="lb" type="text">
+          <br> <br>
+          <button style="color:black" onclick="Hipotenusa()" >Calcular La Hipotenusa</button>
+          <h2>
+          La Hipotenusa es: <p id="resultado4"></p>
+          </h2>
+         </div>
+         <br>
+         <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto5">Ver problema 5</a>
+    
+    </div>
+  </section>
+
+  
+  <section class="content-section bg-light" id="punto5">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2 class="text-secondary mb-5">Problema 5</h2>
+          <h2 class="text-secondary mb-5">Programa para calcular Area Triangulo</h2>
+     
+          <img src="./img/p5.jpg">
+          <br>
+          <p>Ingrese el lado A(cm)</p>
+          <input class="redondeado" id="la5" type="text"  >
+          <p>Ingrese el lado B(cm)</p>
+          <input id="lb5" type="text">
+          <p>Ingrese el lado C(cm)</p>
+          <input id="lc5" type="text">
+          <p></p>
+          <button onclick="AreaT5()" >Calcular Area de Triangulo</button>
+          <h2>
+          El Area es: <p id="resultado5"></p>
+          </h2>
+      <!--     <a href="https://unsplash.com/">Unsplash</a>!</p> -->
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto6">Ver problema 6</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+ <!--problema6 -->
+ <section class="content-section bg-primary text-white text-center" id="punto6">
+  <div class="container">
+    <div class="content-section-heading">
+      <h2 class="text-secondary mb-5">Problema 6</h2>
+      <h2 class="text-secondary mb-5">Programa para Convertir Hora</h2>
+     
+      <img src="./img/p6.jpg">
+      <br>
+      <br>
+      <p>Ingrese La HORA</p>
+      <div class="container">
+        <input style="color:black" id="hora1" value="">
+    
+    </div>
+          </div>
+          <br>
+          <button style="color:black" onclick="hora6()" >Convertir HORA</button>
+          <br> <br>
+          <h2>
+          La hora Sería: <p id="resultado6"></p>
+          </h2>
+       <br>
+       <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto7">Ver problema 7</a>
+  
+  </div>
+</section>
+
+
+<section class="content-section bg-light" id="punto7">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2 class="text-secondary mb-5">Problema 7</h2>
+        <h2 class="text-secondary mb-5">Programa para convertir Fecha</h2>
+     
+        <img src="./img/p7.jpg">
+        <br>
+        <p>Ingrese La Fecha a convertir</p>
+        <input id="fechaP" type="text">
+        <br><br>
+        <button onclick="fecha7()" >Convertir Fecha</button>
+        <br><h2>
+        La Fecha es: <p id="resultado7"></p>
+        </h2>
+  
+        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto8">Ver problema 8</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!--problema8 -->
+ <section class="content-section bg-primary text-white text-center" id="punto8">
+  <div class="container">
+    <div class="content-section-heading">
+      <h2 class="text-secondary mb-5">Problema 8</h2>
+      <h2 class="text-secondary mb-5">Programa para convertir #</h2>
+     
+      <img src="./img/p8.jpg">
+      <br>
+      <br>
+      <p>Ingrese el numero en palabras</p>
+      <div class="container">
+        <input style="color:black" id="palabraa" value="">
+    
+    </div>
+          </div>
+          <br>
+          <button style="color:black" onclick="palabra8()" >Convertir PALABRA</button>
+          <br> <br>
+          <h2>
+              El número es:<p id="resultado8"></p>
+          </h2>
+       <br>
+       <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto9">Ver problema 9</a>
+  
+  </div>
+</section>
+
+
+<section class="content-section bg-light" id="punto9">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2 class="text-secondary mb-5">Problema 9</h2>
+        <h2 class="text-secondary mb-5">Programa para calcular radio circulo</h2>
+     
+        <img src="./img/p9.jpg">
+        <br>
+        <p>Ingrese el radio del circulo</p>
+        <input id="radio9" type="text">
+        <br><br>
+        <button onclick="circulo9()" >Calcular varios</button>
+        <br><h2>
+        El resultado de los calculos son: <p id="resultado9"></p>
+        </h2>
+    <!--     <a href="https://unsplash.com/">Unsplash</a>!</p> -->
+        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto10">Ver problema 10</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--problema8 -->
+<section class="content-section bg-primary text-white text-center" id="punto10">
+  <div class="container">
+    <div class="content-section-heading">
+      <h2 class="text-secondary mb-5">Problema 10</h2>
+      <h2 class="text-secondary mb-5">Programa para convertir #Romano</h2>
+     
+      <img src="./img/p10.jpg">
+      <br>
+      <br>
+      <p>Ingrese el numero: </p>
+      <div class="container">
+     
+          <input style="color:black" id="romano" value="">
+    
+    </div>
+          </div>
+          <br>
+          <button  style="color:black" onclick="romano10()" >Convertir Numero</button>
+          <br> <br>
+          <h2>
+          La numero romano es: <p id="resultado10"></p>
+          </h2>
+       <br>
+       <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto11">Ver problema 11</a>
+  
+  </div>
+</section>
+
+
+<section class="content-section bg-light" id="punto11">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2 class="text-secondary mb-5">Problema 11</h2>
+        <h2 class="text-secondary mb-5">Programa para redondeo de decimales</h2>
+        <img src="./img/p11.jpg">
+        <br>
+        
+  
+
+        <div class="form-group">
+            <label for="inputAddress" style="font-size: 1em">Digito 1</label>
+            <input type="text" class="form-reto" id="digito1">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress" style="font-size: 1em">Digito2</label>
+            <input type="text" class="form-reto" id="digito2">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress" style="font-size: 1em">Digito3</label>
+            <input type="text" class="form-reto" id="digito3">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress" style="font-size: 1em">Digito4</label>
+            <input type="text" class="form-reto" id="digito4">
+        </div>
+
+        <hr />
+        <button onClick="redondear11()">
+            Calcular
+        </button>
+        <br><br>
+ 
+        <br><h2>
+        El numero redondeado es: <p id="resultado11"></p>
+        </h2>
+  
+        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto12">Ver problema 12</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="content-section bg-primary text-white text-center" id="punto12">
+  <div class="container">
+    <div class="content-section-heading">
+      <h2 class="text-secondary mb-5">Problema 12</h2>
+      <img src="./img/p12.jpg">
+      <br>
+      <br>
+     
+      <div class="form-group">
+        <label for="inputAddress" style="font-size: 1em">Día</label>
+        <input style="color: black" type="text" class="form-reto" id="dia">
+    </div>
+    <div class="form-group">
+        <label for="inputAddress" style="font-size: 1em">Mes</label>
+        <input style="color: black" type="text" class="form-reto" id="mes">
+    </div>
+    <div class="form-group">
+        <label for="inputAddress" style="font-size: 1em">Año</label>
+        <input style="color: black" type="text" class="form-reto" id="año">
+    </div>
+
+  
+          <br>
+          <button style="color: black" onclick="edad12()" >Calcular Edad</button>
+          <br> <br>
+          <h2>
+          La Edad de la persona es: <p id="resultado12"></p>
+          </h2>
+       <br>
+       <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto13">Ver problema 13</a>
+  
+  </div>
+</section>
+
+
+
+<section class="content-section bg-light" id="punto13">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2 class="text-secondary mb-5">Problema 13</h2>
+        <h2 class="text-secondary mb-5">Programa ecuaciones lineales</h2>
+        <img src="./img/p13.jpg">
+        <br>
+        
+        
+        <p>
+            ax + by = c
+            <br>
+            dx + ey = f
+        </p>
+
+        <div class="form-group">
+            <label for="inputAddress" style="font-size: 1em">Coeficiente a</label>
+            <input type="text" class="form-reto" id="a">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress" style="font-size: 1em">Coeficiente b</label>
+            <input type="text" class="form-reto" id="b">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress" style="font-size: 1em">Coeficiente c</label>
+            <input type="text" class="form-reto" id="c">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress" style="font-size: 1em">Coeficiente d</label>
+            <input type="text" class="form-reto" id="d">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress" style="font-size: 1em">Coeficeinte e</label>
+            <input type="text" class="form-reto" id="e">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress" style="font-size: 1em">Coeficiente f</label>
+            <input type="text" class="form-reto" id="f">
+        </div>
+
+
+        <hr />
+        <button onClick="ecuaciones13()">
+            Calcular Ecuaciones
+        </button>
+        <br><br>
+ 
+        <br><h2>
+          El resultado de las ecuaciones es <p id="resultado13"></p>
+        </h2>
+
+        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto14">Ver problema 14</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="content-section bg-primary text-white text-center" id="punto14">
+  <div class="container">
+    <div class="content-section-heading">
+      <h2 class="text-secondary mb-5">Problema 14</h2>
+      <h2 class="text-secondary mb-5">Programa para calcular si un año es bisiesto o no</h2>
+      <img src="./img/p14.jpg">
+      <br>
+      <br>
+     
+
+      <div class="form-group">
+          <label for="inputAddress" style="font-size: 1em">Año</label>
+          <input style="color:black" type="text" class="form-reto" id="hora">
+      </div>
+      
+      <hr />
+
+          <button style="color:black" onclick="bisiesto14()" >Convertir Numero</button>
+          <br> <br>
+          <h2>
+          Calcular Bisiesto: <p id="resultado14"></p>
+          </h2>
+       <br>
+       <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto15">Ver problema 15</a>
+  
+  </div>
+</section>
+
+
+<section class="content-section bg-light" id="punto15">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2 class="text-secondary mb-5">Problema 15</h2>
+        <h2 class="text-secondary mb-5">Programa para calcular el numero de días</h2>
+        <img src="./img/p15.jpg">
+        <br>
+        
+        
+
+        <div class="form-group">
+            <label for="inputAddress" style="font-size: 1em">Mes</label>
+            <input style="color:black" id="mes15" type="text">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress" style="font-size: 1em">Año</label>
+            <input style="color:black" id="ano15" type="text">
+        </div>
+        
+        <hr />
+        <button onClick="numDias()">
+            Calcular #Días
+        </button>
+        <br><br>
+ 
+        <br><h2>
+        El de días son: <p id="resultado15"></p>
+        </h2>
+
+        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto16">Ver problema 16</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="content-section bg-primary text-white text-center" id="punto16">
+  <div class="container">
+    <div class="content-section-heading">
+      <h2 class="text-secondary mb-5">Problema 16</h2>
+      <h2 class="text-secondary mb-5">Programa para calcular el salario de un trabajador</h2>
+      <img src="./img/p16.jpg">
+      <br>
+      <br>
+ 
+
+      <div class="form-group">
+          <label for="inputAddress" style="font-size: 1.5em">Hora trabajadas</label>
+          <input style="color: black" type="text" class="form-reto" id="hora16">
+      </div>
+      
+          <br>
+          <button style="color: black" onclick="salario16()" >Calcular salario</button>
+          <br> <br>
+          <h2>
+          La salario calculado es: <p id="resultado16"></p>
+          </h2>
+       <br>
+       <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto17">Ver problema 17</a>
+  
+  </div>
+</section>
+
+
+<section class="content-section bg-light" id="punto17">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2 class="text-secondary mb-5">Problema 17</h2>
+        <h2 class="text-secondary mb-5">Programa para determinar el numero de billetes y monedas</h2>
+        <img src="./img/p17.jpg">
+        <br>
+        <div class="form-group">
+            <label for="inputAddress" style="font-size: 1.5em">Dinero</label>
+            <input style="color: black" type="text" class="form-reto" id="billete17">
+        </div>
+        
+        <hr />
+        <button onClick="billetes17()">
+            Calcular Dinero
+        </button>
+        <br><br>
+ 
+        <br><h1>
+        La cantidad de dinero es:<br> <div id="resultado17" style="font-size: 0.8em"></div>
+        </h2>
+
+        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#punto18">Ver problema 18</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section bg-primary text-white text-center" id="punto18">
+  <div class="container">
+    <div class="content-section-heading">
+      <h2 class="text-secondary mb-5">Problema 18</h2>
+      <h2 class="text-secondary mb-5">Evaluar si el # Positivo, Negativo o Cero</h1>
+      <img src="./img/p18.jpg">
+      <br>
+      <br>
+      <p>Ingrese el numero: </p>
+      <div class="container">
+        <input style="color: black" id="evaluarNum" >
+    
+    </div>
+          </div>
+          <br>
+          <button style="color: black"onclick="evaluar18()" >Evaluar Numero</button>
+          <br> <br>
+          <h2>
+          La numero es: <p id="resultado18"></p>
+          </h2>
+       <br>
+       <a class="btn btn-dark btn-xl js-scroll-trigger" href="#inicio">IR A INICIO</a>
+  
+  </div>
+</section>
+
+
+  <!-- Services -->
+  
+
+  <!-- Callout -->
+  <section class="callout">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Bienvenido al Bootcamp
+        <em> React 2019</em>
+       Eureka! Technology </h2>
+      <a class="btn btn-primary btn-xl" href="https://eurekatiendavirtual.com.co">Ir a Eureka!</a>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="content-section bg-primary text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Sigue nuestras redes sociales...</h2>
+      <a href="https://www.facebook.com/3DEurekaTechnology/"class="btn btn-xl btn-light mr-4">Facebook</a>
+      <a href="https://www.instagram.com/impresion3d.eureka/" class="btn btn-xl btn-dark">Instagram</a>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section id="contact" class="map">
+    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+    <br />
+    <small>
+      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+    </small>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/3DEurekaTechnology/">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/impresion3d.eureka/">
+            <i class="icon-social-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://github.com/jeisonsrz">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Eureka! Technology 2019</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+  <script src="scriptReto2.js"></script>
+
+  
+ 
+</body>
+
+</html>

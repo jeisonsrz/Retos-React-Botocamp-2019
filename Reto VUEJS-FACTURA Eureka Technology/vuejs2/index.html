@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vuesax/dist/vuesax.css"
+      rel="stylesheet"/>
+
+      <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
+    <title>Factura Vue - Eureka! Technology</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+          <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                <h1>Reto 5 - Factura con Vue.js</h1>
+                </div>
+                <div class="col-md-6">
+               <h5> <input type="date" id="fechaActual" value="" > </h5>
+                </div>
+                
+              </div>
+            </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="./img/logoEureka.png" class="img-fluid" alt="Responsive image" width="150px" height="150px">
+            </div>
+            <div class="col-md-3">
+              <img src="./img/impresion3d.png" class="img-fluid" alt="Responsive image" width="100px" height="100px">
+            </div>
+            <div class="col-md-3">
+              <img src="./img/openSource.png" class="img-fluid" alt="Responsive image" width="100px" height="100px">
+            </div>
+            <div class="col-md-3">
+              <h6><strong>Nit: 1061788219</strong></h6>
+              <h6>Dirección: Carrera 1ce#26n-48</h6>
+              <h6>Celular: 318-333-17-72</h6>
+              <h6><strong>Popayán - Cauca</strong></h6>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="./img/instagram.png" class="img-fluid" alt="Responsive image" width="30px" height="30px">
+              @impresion3d.eureka
+            </div>
+            <div class="col-md-4">
+              <img src="./img/facebook.png" class="img-fluid" alt="Responsive image" width="30px" height="30px">
+              @3DEurekaTechnology
+            </div>
+            <div class="col-md-4">
+              <img src="./img/web.png" class="img-fluid" alt="Responsive image" width="30px" height="30px">
+              www.eurekatiendavirtual.com.co
+            </div>
+            
+          </div>
+        </div>
+
+
+        <br>
+        <br>
+        <label for="">Nombre del cliente</label>
+        <input type="text" v-model="usuario.nombre" />
+        <label for="">Email</label>
+        <input type="text" v-model="usuario.email" />
+        <label for="">Celular</label>
+        <input type="text" v-model="usuario.celular" />
+        <label for="">Dirección</label>
+        <input type="text" v-model="usuario.dirección" />
+        <br>
+        <br>
+        <label for="">Nombre Producto</label>
+      <!--   <v-select
+            onchange="changeselect(producto)"
+            label="nombre"
+            v-model="producto"
+            :options="productos"
+          ></v-select>  -->
+          
+        <input type="text" v-model="usuario.producto" />
+        <vs-button @click="addSuper()" color="success" type="filled"
+          >Agregar Producto </vs-button>
+        <br>
+        <br>
+        <h2>Nombre Cliente: {{ usuario.nombre }}</h2>
+        <h2>Correo Electronico: {{ usuario.email }}</h2>
+        <h2>Celular: {{ usuario.celular }}</h2>
+        <h2>Dirección: {{ usuario.dirección }}</h2>
+        <div>
+          <h2 align="center"> Total Factura= {{ cantidad }}  </h2>
+        </div>
+        <div class="row">
+          <super-componente
+            v-for="estudiante in estudiantes"
+            :nombre="estudiante.nombre"
+          ></super-componente>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuesax/dist/vuesax.umd.js"></script>
+    <script src="https://unpkg.com/vue-select@latest"></script>
+
+    <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

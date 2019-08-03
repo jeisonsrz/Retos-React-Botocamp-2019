@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Calculadora Bootcamp 2019</title>
+
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<center>
+        <center><marquee direction="right" id="ejemplo"><span  class="fuente1"  font-size: "50px"; style="color: red; ">💻Calculadora📡 </span></marquee> <a href="javascript:void(0);"></a> <a href="javascript:void(0);"></a></center>
+       
+<form name="f1"><br>
+<input type="text" name="txtnum1">
+<br>
+<input type="text" name="txtnum2" value="0">
+<br>
+
+<br>
+
+
+<br>
+<input type="button" onclick="escribir(this.value)" value="7">
+<input type="button" onclick="escribir(this.value)" value="8">
+<input type="button" onclick="escribir(this.value)" value="9">
+<input type="button" class="arit" onClick="arit('*')" value="×">
+<br>
+<input type="button" onclick="escribir(this.value)" value="4">
+<input type="button" onclick="escribir(this.value)" value="5">
+<input type="button" onclick="escribir(this.value)" value="6">
+<input type="button" class="arit" onClick="arit('-')" value="-">
+<br>
+<input type="button" onclick="escribir(this.value)" value="1">
+<input type="button" onclick="escribir(this.value)" value="2">
+<input type="button" onclick="escribir(this.value)" value="3">
+<input type="button" class="arit" onClick="arit('+')" value="+">
+<br>
+
+<input type="button" onclick="escribir(this.value)" value="0">
+<input type="button" class="igual" onClick="calcular()" value="=">
+<input type="button" class="arit" onClick="arit('/')" value="÷">
+<br>
+</form>
+</center>
+<script src="calcuBootcamp.js">
+	
+</script>
+</body>
+</html>
